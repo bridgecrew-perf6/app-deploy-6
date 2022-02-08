@@ -8,6 +8,6 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'app-container', '--image', 'gcr.io/personalproyect-337100/app-deploy', '--region', 'us-central1']
+  args: ['run', 'deploy', 'app-container', '--image', 'gcr.io/personalproyect-337100/app-deploy', '--region', 'us-central1', '--port', '80', '--allow-unauthenticated']
 images:
 - gcr.io/personalproyect-337100/app-deploy
