@@ -40,7 +40,7 @@ function App() {
     })
   };
   const fileUpload = () => {
-    const url = 'https://us-central1-personalproyect-337100.cloudfunctions.net/function-private-python';
+    const url = 'https://us-central1-delfos-ds-core-invoice.cloudfunctions.net/invoice-private';
     const config = {
       headers: {
         'Access-Control-Allow-Origin': '*',
