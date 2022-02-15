@@ -1,13 +1,13 @@
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/delfos-ds-core-invoice/app-deploy', '.']
+  args: ['build', '-t', 'gcr.io/personalproyect-337100app-deploy', '.']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/delfos-ds-core-invoice/app-deploy']
+  args: ['push', 'gcr.io/personalproyect-337100/app-deploy']
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'app-container', '--image', 'gcr.io/delfos-ds-core-invoice/app-deploy', '--region', 'us-central1', '--port', '80', '--allow-unauthenticated']
+  args: ['run', 'deploy', 'app-container', '--image', 'gcr.io/personalproyect-337100/app-deploy', '--region', 'us-central1', '--port', '80', '--allow-unauthenticated']
 images:
-- gcr.io/delfos-ds-core-invoice/app-deploy
+- gcr.io/personalproyect-337100/app-deploy

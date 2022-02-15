@@ -6,14 +6,14 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCC4y0vGOlLwzHorO4MdDXXsE_oCgogsWI",
-    authDomain: "delfos-ds-core-invoice.firebaseapp.com",
-    projectId: "delfos-ds-core-invoice",
-    storageBucket: "delfos-ds-core-invoice.appspot.com",
-    messagingSenderId: "317168919444",
-    appId: "1:317168919444:web:96c43cf02477e41f092581",
-    measurementId: "G-N1X2L7ZWXG"
-  };
+    apiKey: "AIzaSyChDN-faZIW3QsDwb-ISLXQshYQZTL_Exw",
+    authDomain: "personalproyect-337100.firebaseapp.com",
+    projectId: "personalproyect-337100",
+    storageBucket: "personalproyect-337100.appspot.com",
+    messagingSenderId: "169502430259",
+    appId: "1:169502430259:web:857894dfb6afb355f5ff46",
+    measurementId: "G-H3HTNFFN0P"
+};
 
 const app = initializeApp(firebaseConfig);
 
