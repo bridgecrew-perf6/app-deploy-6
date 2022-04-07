@@ -8,6 +8,7 @@ function App() {
 
   const signInWithGoogle = () => {
     const provider = new GoogleAuthProvider();
+    provider.addScope('https://www.googleapis.com/auth/cloud-platform.read-only');
     signInWithPopup(authentication, provider)
       .then((result) => {
         if (result.user) {
@@ -40,11 +41,11 @@ function App() {
     })
   };
   const fileUpload = () => {
-    const url = 'https://us-central1-delfos-ds-core-invoice.cloudfunctions.net/function-1';
+    const url = 'http://34.69.68.122/api-template/v1/health';
     const config = {
       headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Authorization':`Bearer ${token}`
+
+        'email':`jorge@garcia.com`
       }
     }
     return get(url, {}, { headers : config.headers})
