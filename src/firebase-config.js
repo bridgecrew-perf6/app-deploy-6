@@ -1,18 +1,14 @@
-import {
-    initializeApp
-} from "firebase/app";
-import {
-    getAuth
-} from "firebase/auth";
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyChDN-faZIW3QsDwb-ISLXQshYQZTL_Exw",
-    authDomain: "personalproyect-337100.firebaseapp.com",
-    projectId: "personalproyect-337100",
-    storageBucket: "personalproyect-337100.appspot.com",
-    messagingSenderId: "169502430259",
-    appId: "1:169502430259:web:857894dfb6afb355f5ff46",
-    measurementId: "G-H3HTNFFN0P"
+  apiKey: "AIzaSyCyrp0YIvVi9mi7zI257y8OhRH4Kgd1_8s",
+  authDomain: "personalproject-2.firebaseapp.com",
+  databaseURL: "https://personalproject-2-default-rtdb.firebaseio.com",
+  projectId: "personalproject-2",
+  storageBucket: "personalproject-2.appspot.com",
+  messagingSenderId: "1097579966006",
+  appId: "1:1097579966006:web:d0191a3f78fbf8d0047297",
 };
 
 const app = initializeApp(firebaseConfig);
